@@ -1,0 +1,14 @@
+* Hey idiot
+You forgot how to setup the dev environment for qmk? It's pretty
+simple.
+
+1. Install the qmk shell utility.
+   - For windows, use msys.qmk.fm
+   - For linux, either `pip install` or use package manager.
+2. Clone qmk_firmware
+   - ZSA's fork: https://github.com/zsa/qmk_firmware
+   - Master: https://github.com/qmk/qmk_firmware
+3. Clone this repository into qmk_firmware/keyboards/moonlander/keymaps/$layout_name
+4. Build with one of the following:
+   - If you setup the qmk tool, `qmk compile -kb moonlander -km $layout_name`
+   - If you were lazy, then `make moonlander:$layout_name`
